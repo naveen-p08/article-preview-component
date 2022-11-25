@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --bg-dark-blue: 217 19% 35%;
+    --clr-text-heading: 214 17% 51%;
+    --clr-text-body: 212 23% 69%;
+    --clr-text-highlight: 210 46% 95%;
+
+    --fw-500: 500;
+    --fw-700: 700;
+
+    --fs-400: 1.3rem;
+    --fs-900: 1.6rem;
+}
+
+@media (min-width: 45em) {
+    :root {
+        --fs-900: 2.0rem;
+    }
+}
+
+body {
+    display: grid;
+    place-content: center center;
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
