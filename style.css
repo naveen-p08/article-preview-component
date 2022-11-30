@@ -144,10 +144,18 @@ img {
     inset: 0 0 0 0;
     background-color: hsl(var(--clr-text-heading));
     display: flex;
-    /* justify-content: center; */
     padding-left: 3rem;
     align-items: center;
     gap: 2rem;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+}
+
+.share-items.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .share {
@@ -155,11 +163,6 @@ img {
     font-weight: var(--fw-700);
     letter-spacing: 4px;
 }
-
-.share-btn:active {
-    color: blue;
-}
-
 
 @media (min-width: 45em) {
     .card {
