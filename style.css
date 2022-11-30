@@ -132,6 +132,11 @@ img {
     position: relative;
 }
 
+.share-btn.active {
+    background: hsl(var(--clr-text-body));
+    color: hsl(var(--clr-white));
+}
+
 .info-wrapper {
     position: relative;
     padding-bottom: 1rem;
@@ -189,7 +194,7 @@ img {
         inset: -60px 0 auto auto;
         transform: translateX(20%);
         /* z-index: 99; */
-        padding: 1rem 1.5rem;
+        padding: 1.25rem 2.5rem;
         border-radius: 1rem;
         gap: 1rem;
         box-shadow: 0 2px 10px 0 hsl(var(--clr-text-heading) / 0.6);
@@ -202,7 +207,7 @@ img {
         background: hsl(var(--clr-text-heading));
         position: absolute;
         bottom: -20%;
-        left: 50%;
+        left: 53%;
         transform: translateX(-50%) rotate(45deg);
     }
 

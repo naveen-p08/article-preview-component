@@ -8,8 +8,10 @@ shareBtn.addEventListener('click', ()=> {
     if(ariaState == 'false') {
         shareBtn.setAttribute('aria-expanded', 'true')
         shareItems.classList.add('visible')
+        shareBtn.classList.add('active')
     }else {
         shareBtn.setAttribute('aria-expanded', 'false')
         shareItems.classList.remove('visible')
+        shareBtn.classList.remove('active')
     }
 })
