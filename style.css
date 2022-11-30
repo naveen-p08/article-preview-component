@@ -49,6 +49,7 @@ body {
     min-height: 100vh;
     font-family: 'Manrope', sans-serif;
     background: hsl(var(--clr-bg-blue));
+    padding-inline: 1rem;
 }
 
 img {
@@ -57,9 +58,14 @@ img {
 
 .card {
     display: grid;
-    grid-template-rows: 3fr 4fr;
+    grid-template-rows: auto max-content;
+    max-width: 33rem;
+    background: hsl(var(--clr-white));
 }
 
+.image {
+    line-height: 0;
+}
 
 
 
@@ -68,6 +74,5 @@ img {
         grid-template-columns: 3fr 4fr;
         grid-template-rows: auto;
         max-width: 73rem;
-        background: hsl(var(--clr-white));
     }
 }
