@@ -11,10 +11,11 @@ html {
 }
 
 :root {
-    --bg-dark-blue: 217 19% 35%;
+    --clr-dark-blue: 217 19% 35%;
     --clr-text-heading: 214 17% 51%;
     --clr-text-body: 212 23% 69%;
-    --clr-text-highlight: 210 46% 95%;
+    --clr-bg-blue: 210 46% 95%;
+    --clr-white: 0 0% 100%;
 
     --fw-500: 500;
     --fw-700: 700;
@@ -47,4 +48,26 @@ body {
     place-content: center center;
     min-height: 100vh;
     font-family: 'Manrope', sans-serif;
+    background: hsl(var(--clr-bg-blue));
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 3fr 4fr;
+}
+
+
+
+
+@media (min-width: 45em) {
+    .card {
+        grid-template-columns: 3fr 4fr;
+        grid-template-rows: auto;
+        max-width: 73rem;
+        background: hsl(var(--clr-white));
+    }
 }
